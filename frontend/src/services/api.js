@@ -79,5 +79,12 @@ export const portfolioAPI = {
     }
   }
 };
+const BASE_URL = process.env.REACT_APP_BACKEND_URL;
+
+// Example:
+fetch(`${BASE_URL}/contact`, {
+  method: "POST",
+  body: JSON.stringify(data),
+});
 
 export default portfolioAPI;
